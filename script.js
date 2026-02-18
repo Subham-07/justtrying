@@ -6,8 +6,7 @@ let nname = document.getElementsByClassName('wish');
 
 function nameChange() {
     const user = document.getElementById('ask').value;
-    // document.getElementByIdr('hi').textContent = `Hello ${user},`;
-    document.getElementById('hi').innerHTML = "Hello, "+ user ;
+    document.getElementById('hi').innerHTML = "Hello!!, "+ user ;
 }
 
 
@@ -34,3 +33,4 @@ function greenColor()
     green.style.backgroundColor = "green";
     green.style.color = "white";
 }
+
