@@ -5,8 +5,13 @@ let green = document.getElementById('green');
 let nname = document.getElementsByClassName('wish');
 
 function nameChange() {
-    const user = document.getElementById('ask').value;
-    document.getElementById('hi').innerHTML = "Hello, "+ user ;
+    const user = document.getElementById('ask').value.trim();
+    const greeting = document.getElementById('hi');
+    if (user === "") {
+        greeting.textContent = "Hello";
+    } else {
+        greeting.textContent = "Hello, " + user;
+    }
 }
 
 
@@ -33,5 +38,6 @@ function greenColor()
     green.style.backgroundColor = "green";
     green.style.color = "white";
 }
+
 
 
